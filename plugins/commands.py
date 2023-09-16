@@ -44,7 +44,7 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
                     InlineKeyboardButton('🔶 GROUP 1🔶', url="https://t.me/request_bots"),
-                    InlineKeyboardButton('🔶 GROUP 2🔶', url='https://t.me/request_bots')
+                    InlineKeyboardButton('🔶 GROUP 2🔶', url='https://t.me/+JBAQJvocrkBhMmNl')
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
@@ -95,7 +95,7 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
                     InlineKeyboardButton('🔶 GROUP 1🔶', url="https://t.me/request_bots"),
-                    InlineKeyboardButton('🔶 GROUP 2🔶', url='https://t.me/request_bots')
+                    InlineKeyboardButton('🔶 GROUP 2🔶', url='https://t.me/+JBAQJvocrkBhMmNl')
                 ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
