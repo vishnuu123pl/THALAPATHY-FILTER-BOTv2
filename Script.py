@@ -21,23 +21,10 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
 Tʜɪs Bᴏᴛ ʜᴀs Lᴀᴛᴇsᴛ ᴀɴᴅ Aᴅᴠᴀɴᴄᴇᴅ Fᴇᴀᴛᴜʀᴇs⚡️
 
-Where is source code? - <a href='https://t.me/Teamrioupdates/267'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
+Developer - <a href='https://t.me/CHOWDARY106'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 
-
-Developer - <a href='https://t.me/creatorrio'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
-
-special Thanks To ❤️ Devs -
-
--Dev 1 [Owner of this bot ]<a href='https://t.me/creatorrio'>TEAM RIO</a>
-
--Dev 2 <a href='https://t.me/Kgashok04'>ASHOK</a>
-
--Dev 3 <a href='https://t.me/creatorbeatz'>Jᴏᴇʟ </> TɢX</a>
-
-- Dev 4 <a href='https://t.me/TeamEvamaria'>TEAM EVAMARIA</a>
+special Thanks To ❤️ ADMIN -
 """
-
-
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
