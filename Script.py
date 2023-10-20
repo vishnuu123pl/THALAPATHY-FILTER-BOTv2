@@ -215,7 +215,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ :@hotstar_bots <code> {file_name} </code>
+    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ :<code> {file_name} </code>
     
 Made by ❤️ @request_bots""" 
 
