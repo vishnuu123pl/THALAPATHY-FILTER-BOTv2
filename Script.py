@@ -215,16 +215,10 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ :<code> {file_name} </code>
-    
-Made by ❤️ @request_bots""" 
+    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ :<code> {file_name} </code>""" 
 
     IMDB_TEMPLATE_TXT = """
-<b>Query: {qurey}
-
-<b>🏷 Title</b>: <a href={url}>{title}</a>
-
-Requested by : {message.from_user.mention}</b>"""
+<b>🏷 Title</b>: <a href={url}>{title}</a>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
