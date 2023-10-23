@@ -219,7 +219,8 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
     CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ :<code> {file_name} </code>""" 
 
-    IMDB_TEMPLATE_TXT = """<b>🏷 Title</b>: <a href={url}>{title}</a>"""
+    IMDB_TEMPLATE_TXT = """
+    <b>🏷 Title</b>: <a href={url}>{title}</a>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
