@@ -1287,15 +1287,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('🔶 GROUP 1🔶', url="https://t.me/request_bots"),
-                    InlineKeyboardButton('🔶 GROUP 2🔶', url='https://t.me/+JBAQJvocrkBhMmNl')
-                ],[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('🔗 MAIN CHANNEL🔗', url=CHNL_LNK)
+                    InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💲🪙', url=SHORTLINK_INFO)
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
