@@ -184,7 +184,7 @@ Send this command in your group
 
 That's it!!! Enjoy Earning Money 💲
 
-[[[ Trusted Earning Site - https://kpslink.in]]]
+[[[ Trusted Earning Site - https://linkpays.in]]]
 
 If you have any Doubts, Feel Free to Ask me - @Chowdary106</b>
 """
