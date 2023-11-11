@@ -180,7 +180,7 @@ Send this command in your group
 —> /shortlink {your_shortener_website_name} {your_shortener_api}
 
 #Sample:-
-/shortlink kpslink.in CAACAgUAAxkBAAEJ4GtkyPgEzpIUC_DSmirN6eFWp4KInAACsQoAAoHSSFYub2D15dGHfy8E
+/shortlink linkpays.in 48a7c961ae68e2c3e211a17461c13c3e387156a9
 
 That's it!!! Enjoy Earning Money 💲
 
