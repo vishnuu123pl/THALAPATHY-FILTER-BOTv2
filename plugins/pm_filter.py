@@ -1937,14 +1937,42 @@ async def auto_filter(client, msg, spoll=False):
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(180)
-	@@ -1953,6 +1954,7 @@ async def auto_filter(client, msg, spoll=False):
+                    await hehe.delete()
+                    fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                    await asyncio.sleep(30)
+                    await fek.delete()
+            except KeyError:
+                await save_group_settings(message.chat.id, 'auto_delete', True)
+                await asyncio.sleep(180)
+                await hehe.delete()
+                fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                await asyncio.sleep(30)
+                await fek.delete()
+        except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(180)
-	@@ -1977,13 +1979,15 @@ async def auto_filter(client, msg, spoll=False):
+                    await hmm.delete()
+                    fek = await message.reply_text(f"Hey <code>{message.from_user.mention}<\code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                    await asyncio.sleep(30)
+                    await fek.delete()
+            except KeyError:
+                await save_group_settings(message.chat.id, 'auto_delete', True)
+                await asyncio.sleep(180)
+                await hmm.delete()
+                fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                await asyncio.sleep(30)
+                await fek.delete()
+        except Exception as e:
+            logger.exception(e)
+            fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
+            try:
+                if settings['auto_delete']:
+                    await asyncio.sleep(180)
+                    await fek.delete()
                     fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
                     await asyncio.sleep(30)
                     await fek.delete()
@@ -1958,7 +1986,9 @@ async def auto_filter(client, msg, spoll=False):
     else:
         fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
         try:
-	@@ -1993,6 +1997,7 @@ async def auto_filter(client, msg, spoll=False):
+            if settings['auto_delete']:
+                await asyncio.sleep(180)
+                await fuk.delete()
                 fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
                 await asyncio.sleep(30)
                 await fek.delete()
