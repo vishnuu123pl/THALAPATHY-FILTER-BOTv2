@@ -1934,62 +1934,74 @@ async def auto_filter(client, msg, spoll=False):
 
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
-                    await asyncio.sleep(300)
+                    await asyncio.sleep(180)
                     await hehe.delete()
-                    await message.delete()
+                    fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                    await asyncio.sleep(30)
+                    await fek.delete()
             except KeyError:
                 await save_group_settings(message.chat.id, 'auto_delete', True)
-                await asyncio.sleep(300)
+                await asyncio.sleep(180)
                 await hehe.delete()
-                await message.delete()
+                fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                await asyncio.sleep(30)
+                await fek.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
-            poster = pic.replace('.jpg', "._V1_UX360.jpg") 
-            hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
-            try:
-               if settings['auto_delete']:
-                    await asyncio.sleep(300)
-                    m=await message.reply_text("🔎")
-                    await hmm.delete()
-                    await message.delete()
-            except KeyError:
-                await save_group_settings(message.chat.id, 'auto_delete', True)
-                await asyncio.sleep(300)
-                await hmm.delete()
-                await message.delete()
-        except Exception as e:
-            logger.exception(e)
-            m=await message.reply_text("🔎") 
-            fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
+            poster = pic.replace('.jpg', "._V1_UX360.jpg")
+            hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
-                    await asyncio.sleep(300)
+                    await asyncio.sleep(180)
+                    await hmm.delete()
+                    fek = await message.reply_text(f"Hey <code>{message.from_user.mention}<\code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                    await asyncio.sleep(30)
                     await fek.delete()
-                    await message.delete()
             except KeyError:
                 await save_group_settings(message.chat.id, 'auto_delete', True)
-                await asyncio.sleep(300)
+                await asyncio.sleep(180)
+                await hmm.delete()
+                fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                await asyncio.sleep(30)
                 await fek.delete()
-                await message.delete()
+        except Exception as e:
+            logger.exception(e)
+            fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
+            try:
+                if settings['auto_delete']:
+                    await asyncio.sleep(180)
+                    await fek.delete()
+                    fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                    await asyncio.sleep(30)
+                    await fek.delete()
+            except KeyError:
+                await save_group_settings(message.chat.id, 'auto_delete', True)
+                await asyncio.sleep(180)
+                await fek.delete()
+                fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                await asyncio.sleep(30)
+                await fek.delete()
     else:
-        fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
-        await m.delete()
+        fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
         try:
             if settings['auto_delete']:
-                await asyncio.sleep(300)
+                await asyncio.sleep(180)
                 await fuk.delete()
-                await message.delete()
+                fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+                await asyncio.sleep(30)
+                await fek.delete()
         except KeyError:
             await save_group_settings(message.chat.id, 'auto_delete', True)
-            await asyncio.sleep(300)
+            await asyncio.sleep(180)
             await fuk.delete()
-            await message.delete()
+            fek = await message.reply_text(f"Hey <code>{message.from_user.mention}</code>\n\nYour Request Has Been Deleted👍🏻\n(Due To Avoid Copyrights Issue😌)\n\nRequest Again For That Files ❤️")
+            await asyncio.sleep(30)
+            await fek.delete()
+    if spoll:
+        await msg.message.delete(30)
 
 
 async def advantage_spell_chok(client, msg):
