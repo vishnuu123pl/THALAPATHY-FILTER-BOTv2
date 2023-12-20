@@ -6,7 +6,8 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /THALAPATHY-FILTER-BOTv
 WORKDIR /THALAPATHY-FILTER-BOTv
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+
+COPY ..
+
+CMD ["python3", "bot.py"]
